@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1686503637062,
+  "index": "/app_noticias/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/app_noticias/favicon.ico",
+        "/app_noticias/index.html",
+        "/app_noticias/main.ab425fb2d2cb1eb6.js",
+        "/app_noticias/manifest.webmanifest",
+        "/app_noticias/polyfills.391ac9796251a732.js",
+        "/app_noticias/runtime.0cf412ee57896387.js",
+        "/app_noticias/styles.597bf6299028ce00.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/app_noticias/assets/css/animate.css",
+        "/app_noticias/assets/icons/icon-128x128.png",
+        "/app_noticias/assets/icons/icon-144x144.png",
+        "/app_noticias/assets/icons/icon-152x152.png",
+        "/app_noticias/assets/icons/icon-192x192.png",
+        "/app_noticias/assets/icons/icon-384x384.png",
+        "/app_noticias/assets/icons/icon-512x512.png",
+        "/app_noticias/assets/icons/icon-72x72.png",
+        "/app_noticias/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "news-api",
+      "patterns": [
+        "https:\\/\\/newsapi\\.org\\/v2\\/top-headlines\\?country=us&apiKey=824ecd4d38574beb9bee12a2094c29ca\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/app_noticias/assets/css/animate.css": "7d66ec08366586099959d97c87c5f3313dcf4809",
+    "/app_noticias/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/app_noticias/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/app_noticias/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/app_noticias/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/app_noticias/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/app_noticias/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/app_noticias/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/app_noticias/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/app_noticias/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/app_noticias/index.html": "913d972678c28613b202922e584f87c0190ba341",
+    "/app_noticias/main.ab425fb2d2cb1eb6.js": "2b55b14f828be5d73960f01d6b9840b8c762a32b",
+    "/app_noticias/manifest.webmanifest": "567a59076affdf7230e5e64185141af617f9a219",
+    "/app_noticias/polyfills.391ac9796251a732.js": "38a3571e041c9b9fa2105f4c9364b53444481ec1",
+    "/app_noticias/runtime.0cf412ee57896387.js": "f2ef36ee38914b933594b016ace8826622799ed3",
+    "/app_noticias/styles.597bf6299028ce00.css": "617bf78dff0a408f5b044fcf764566eb6f204cd2"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
